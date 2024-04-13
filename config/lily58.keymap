@@ -22,12 +22,14 @@
             bindings = <&kp DELETE>;
             key-positions = <11 49>;
             layers = <0>;
+            timeout-ms = <100>;
         };
 
         COMBO_DELETE2 {
             bindings = <&kp DELETE>;
             key-positions = <11 36>;
             layers = <0>;
+            timeout-ms = <100>;
         };
     };
 
