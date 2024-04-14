@@ -43,11 +43,11 @@
 
             display-name = "Base";
             bindings = <
-&gresc     &kp N1  &kp N2  &kp N3  &kp N4    &kp N5                                  &kp N6     &kp N7     &kp N8     &kp N9   &kp N0    &bspc_del
-&kp TAB    &kp Q   &kp W   &kp E   &kp R     &kp T                                   &kp Y      &kp U      &kp I      &kp O    &kp P     &kp BACKSLASH
-&kp LCTRL  &kp A   &kp S   &kp D   &kp F     &kp G                                   &kp H      &kp J      &kp K      &kp L    &kp SEMI  &mt RCTRL SINGLE_QUOTE
-&kp LSHFT  &kp Z   &kp X   &kp C   &kp V     &kp B         &kp LBKT     &kp RBKT     &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                           &to 1   &kp LGUI  &kp LEFT_ALT  &kp SPACE    &lt 1 ENTER  &kp MINUS  &kp EQUAL  &to 1
+&gresc     &kp N1  &kp N2  &kp N3              &kp N4    &kp N5                                  &kp N6     &kp N7     &kp N8                 &kp N9   &kp N0    &bspc_del
+&kp TAB    &kp Q   &kp W   &kp E               &kp R     &kp T                                   &kp Y      &kp U      &kp I                  &kp O    &kp P     &kp BACKSLASH
+&kp LCTRL  &kp A   &kp S   &kp D               &kp F     &kp G                                   &kp H      &kp J      &kp K                  &kp L    &kp SEMI  &mt RCTRL SINGLE_QUOTE
+&kp LSHFT  &kp Z   &kp X   &kp C               &kp V     &kp B         &kp LBKT     &kp RBKT     &kp N      &kp M      &kp COMMA              &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+                           &lt 1 RS(CAPSLOCK)  &kp LGUI  &kp LEFT_ALT  &kp SPACE    &lt 1 ENTER  &kp MINUS  &kp EQUAL  &lt 1 LS(PRINTSCREEN)
             >;
         };
 
@@ -61,11 +61,11 @@
 
             display-name = "Utility";
             bindings = <
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                                &kp F7        &kp F8          &kp F9                &kp F10               &kp F11  &kp F12
-&trans      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                          &kp K_BACK    &kp PAGE_DOWN   &kp PAGE_UP           &kp K_FORWARD         &trans   &trans
-&kp LCTRL   &trans        &trans        &trans        &trans        &trans                                &kp LEFT      &kp DOWN_ARROW  &kp UP_ARROW          &kp RIGHT             &trans   &kp RCTRL
-&kp LSHIFT  &trans        &trans        &trans        &trans        &trans        &trans       &trans     &kp C_VOL_DN  &kp C_VOL_UP    &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans   &kp RIGHT_SHIFT
-                                        &to 0         &kp LGUI      &kp LEFT_ALT  &kp SPACE    &kp ENTER  &kp HOME      &kp END         &to 0
+&kp F1      &kp F2        &kp F3        &kp F4              &kp F5        &kp F6                                &kp F7        &kp F8          &kp F9                 &kp F10               &kp F11  &kp F12
+&trans      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2        &bt BT_SEL 3  &bt BT_SEL 4                          &kp K_BACK    &kp PAGE_DOWN   &kp PAGE_UP            &kp K_FORWARD         &trans   &trans
+&kp LCTRL   &trans        &trans        &trans              &trans        &trans                                &kp LEFT      &kp DOWN_ARROW  &kp UP_ARROW           &kp RIGHT             &trans   &kp RCTRL
+&kp LSHIFT  &trans        &trans        &trans              &trans        &trans        &trans       &trans     &kp C_VOL_DN  &kp C_VOL_UP    &kp C_BRIGHTNESS_DEC   &kp C_BRIGHTNESS_INC  &trans   &kp RIGHT_SHIFT
+                                        &lt 0 RS(CAPSLOCK)  &kp LGUI      &kp LEFT_ALT  &kp SPACE    &kp ENTER  &kp HOME      &kp END         &lt 0 LS(PRINTSCREEN)
             >;
         };
     };
