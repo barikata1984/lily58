@@ -23,28 +23,28 @@
             bindings = <&to 1>;
             key-positions = <36 50>;
             layers = <0>;
-            timeout-ms = <100>;
+            timeout-ms = <200>;
         };
 
         to_utility_2 {
             bindings = <&to 1>;
             key-positions = <57 49>;
             layers = <0>;
-            timeout-ms = <100>;
+            timeout-ms = <200>;
         };
 
         to_base_1 {
             bindings = <&to 0>;
             key-positions = <36 50>;
             layers = <1>;
-            timeout-ms = <100>;
+            timeout-ms = <200>;
         };
 
         to_base_2 {
             bindings = <&to 0>;
             key-positions = <57 49>;
             layers = <1>;
-            timeout-ms = <100>;
+            timeout-ms = <200>;
         };
     };
 
