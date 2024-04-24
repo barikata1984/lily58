@@ -47,6 +47,41 @@
             layers = <1>;
             timeout-ms = <200>;
         };
+
+        BT_SEL_0 {
+            bindings = <&bt BT_SEL 0>;
+            key-positions = <53 1>;
+            timeout-ms = <200>;
+            layers = <1>;
+        };
+
+        BT_SEL_1 {
+            bindings = <&bt BT_SEL 1>;
+            key-positions = <53 2>;
+            timeout-ms = <200>;
+            layers = <1>;
+        };
+
+        BT_SEL_2 {
+            bindings = <&bt BT_SEL 2>;
+            key-positions = <53 3>;
+            timeout-ms = <200>;
+            layers = <1>;
+        };
+
+        BT_SEL_3 {
+            bindings = <&bt BT_SEL 3>;
+            key-positions = <53 4>;
+            timeout-ms = <200>;
+            layers = <1>;
+        };
+
+        BT_SEL_4 {
+            bindings = <&bt BT_SEL 4>;
+            key-positions = <53 5>;
+            timeout-ms = <200>;
+            layers = <1>;
+        };
     };
 
     behaviors {
@@ -91,11 +126,11 @@
 
             display-name = "Utility";
             bindings = <
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                                &kp F7                    &kp F8           &kp F9                &kp F10               &kp F11   &kp F12
-&trans      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                          &kp K_BACK                &kp PAGE_DOWN    &kp PAGE_UP           &kp K_FORWARD         &kp HOME  &kp END
-&kp LCTRL   &trans        &trans        &trans        &trans        &trans                                &kp LEFT                  &kp DOWN_ARROW   &kp UP_ARROW          &kp RIGHT             &trans    &kp RCTRL
-&kp LSHIFT  &trans        &trans        &trans        &trans        &trans        &mkp LCLK    &mkp RCLK  &mt K_MUTE C_VOLUME_DOWN  &kp C_VOL_UP     &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans    &kp RIGHT_SHIFT
-                                        &trans        &kp CAPSLOCK  &kp LEFT_ALT  &kp SPACE    &kp ENTER  &kp C_PLAY_PAUSE          &kp PRINTSCREEN  &trans
+&kp F1      &kp F2  &kp F3  &kp F4  &kp F5        &kp F6                                &kp F7                    &kp F8           &kp F9                &kp F10               &kp F11   &kp F12
+&trans      &trans  &trans  &trans  &trans        &trans                                &kp K_BACK                &kp PAGE_DOWN    &kp PAGE_UP           &kp K_FORWARD         &kp HOME  &kp END
+&kp LCTRL   &trans  &trans  &trans  &trans        &trans                                &kp LEFT                  &kp DOWN_ARROW   &kp UP_ARROW          &kp RIGHT             &trans    &kp RCTRL
+&kp LSHIFT  &trans  &trans  &trans  &trans        &trans        &mkp LCLK    &mkp RCLK  &mt K_MUTE C_VOLUME_DOWN  &kp C_VOL_UP     &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans    &kp RIGHT_SHIFT
+                            &trans  &kp CAPSLOCK  &kp LEFT_ALT  &kp SPACE    &kp ENTER  &kp C_PLAY_PAUSE          &kp PRINTSCREEN  &trans
             >;
         };
     };
