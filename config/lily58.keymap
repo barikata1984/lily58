@@ -93,14 +93,14 @@
         ESC_1 {
             bindings = <&kp ESCAPE>;
             key-positions = <0 24 36>;
-            timeout-ms = <200>;
+            timeout-ms = <400>;
             layers = <0>;
         };
 
         ESC_2 {
             bindings = <&kp ESCAPE>;
             key-positions = <0 35 49>;
-            timeout-ms = <200>;
+            timeout-ms = <400>;
             layers = <0>;
         };
     };
