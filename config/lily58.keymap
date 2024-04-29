@@ -50,35 +50,35 @@
 
         BT_SEL_0 {
             bindings = <&bt BT_SEL 0>;
-            key-positions = <53 1>;
+            key-positions = <53 1 36>;
             timeout-ms = <200>;
             layers = <1>;
         };
 
         BT_SEL_1 {
             bindings = <&bt BT_SEL 1>;
-            key-positions = <53 2>;
+            key-positions = <53 2 36>;
             timeout-ms = <200>;
             layers = <1>;
         };
 
         BT_SEL_2 {
             bindings = <&bt BT_SEL 2>;
-            key-positions = <53 3>;
+            key-positions = <53 3 36>;
             timeout-ms = <200>;
             layers = <1>;
         };
 
         BT_SEL_3 {
             bindings = <&bt BT_SEL 3>;
-            key-positions = <53 4>;
+            key-positions = <53 4 36>;
             timeout-ms = <200>;
             layers = <1>;
         };
 
         BT_SEL_4 {
             bindings = <&bt BT_SEL 4>;
-            key-positions = <53 5>;
+            key-positions = <53 5 36>;
             timeout-ms = <200>;
             layers = <1>;
         };
