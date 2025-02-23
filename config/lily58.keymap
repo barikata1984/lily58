@@ -160,7 +160,7 @@
 &trans      &trans  &trans  &trans  &trans    &trans                                &kp C_AC_BACK      &kp PAGE_DOWN    &kp PAGE_UP           &kp C_AC_FORWARD      &kp HOME  &trans
 &kp LCTRL   &trans  &trans  &trans  &trans    &trans                                &kp LEFT           &kp DOWN_ARROW   &kp UP_ARROW          &kp RIGHT             &kp END   &kp RCTRL
 &kp LSHIFT  &trans  &trans  &trans  &trans    &trans        &mkp LCLK    &mkp RCLK  &kp C_VOLUME_DOWN  &kp C_VOL_UP     &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans    &kp RIGHT_SHIFT
-                            &trans  &kp LGUI  &kp LEFT_ALT  &kp SPACE    &kp ENTER  &kp C_PLAY_PAUSE   &kp PRINTSCREEN  &trans
+                            &trans  &kp LGUI  &kp LEFT_ALT  &kp SPACE    &kp ENTER  &trans             &kp PRINTSCREEN  &kp C_PLAY_PAUSE
             >;
         };
 
