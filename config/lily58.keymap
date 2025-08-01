@@ -87,6 +87,11 @@
             bindings = <&kp RIGHT_SHIFT>;
             key-positions = <46 47>;
         };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <25 26>;
+        };
     };
 
     behaviors {
