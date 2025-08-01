@@ -69,23 +69,23 @@
         };
 
         lctrl {
-            bindings = <&kp LS(LEFT_CONTROL)>;
-            key-positions = <26 25>;
+            bindings = <&kp LEFT_CONTROL>;
+            key-positions = <26 27>;
         };
 
         lshft {
             bindings = <&kp LEFT_SHIFT>;
-            key-positions = <38 37>;
+            key-positions = <38 39>;
         };
 
         rctrl {
             bindings = <&kp RIGHT_CONTROL>;
-            key-positions = <33 34>;
+            key-positions = <33 32>;
         };
 
         rshft {
             bindings = <&kp RIGHT_SHIFT>;
-            key-positions = <47 48>;
+            key-positions = <47 46>;
         };
 
         bspc-del {
