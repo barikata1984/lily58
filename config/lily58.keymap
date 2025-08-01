@@ -90,7 +90,7 @@
 
         bspc-del {
             bindings = <&bspc_del>;
-            key-positions = <21 22>;
+            key-positions = <20 19>;
         };
     };
 
