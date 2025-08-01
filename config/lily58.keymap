@@ -57,40 +57,44 @@
 
         MUTE {
             bindings = <&kp C_MUTE>;
-            key-positions = <45 46>;
-            timeout-ms = <500>;
+            key-positions = <46 47>;
+            timeout-ms = <25>;
         };
 
         COMBO_ESC {
             bindings = <&kp ESCAPE>;
             key-positions = <31 32>;
-            timeout-ms = <500>;
-            layers = <0>;
+            timeout-ms = <25>;
         };
 
         lctrl {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <26 27>;
+            timeout-ms = <25>;
         };
 
         lshft {
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <38 39>;
+            timeout-ms = <25>;
         };
 
         rctrl {
             bindings = <&kp RIGHT_CONTROL>;
             key-positions = <33 32>;
+            timeout-ms = <25>;
         };
 
         rshft {
             bindings = <&kp RIGHT_SHIFT>;
             key-positions = <47 46>;
+            timeout-ms = <25>;
         };
 
         bspc-del {
             bindings = <&bspc_del>;
             key-positions = <20 19>;
+            timeout-ms = <25>;
         };
     };
 
