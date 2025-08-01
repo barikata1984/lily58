@@ -93,7 +93,13 @@
 
         bspc-del {
             bindings = <&bspc_del>;
-            key-positions = <20 19>;
+            key-positions = <20 21>;
+            timeout-ms = <25>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <14 15>;
             timeout-ms = <25>;
         };
     };
