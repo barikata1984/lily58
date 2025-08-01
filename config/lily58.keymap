@@ -20,86 +20,51 @@
             layers = <1>;
         };
 
-        to_cad_1 {
-            bindings = <&to 2>;
-            key-positions = <36 50>;
-            layers = <0>;
-            timeout-ms = <500>;
-        };
-
-        to_cad_2 {
-            bindings = <&to 2>;
-            key-positions = <57 49>;
-            layers = <0>;
-            timeout-ms = <500>;
-        };
-
-        to_base_1 {
-            bindings = <&to 0>;
-            key-positions = <36 50>;
-            layers = <2>;
-            timeout-ms = <500>;
-        };
-
-        to_base_2 {
-            bindings = <&to 0>;
-            key-positions = <57 49>;
-            layers = <2>;
-            timeout-ms = <500>;
-        };
-
         BT_SEL_0 {
             bindings = <&bt BT_SEL 0>;
-            key-positions = <53 1 36>;
+            key-positions = <53 54 13>;
             timeout-ms = <500>;
             layers = <1>;
         };
 
         BT_SEL_1 {
             bindings = <&bt BT_SEL 1>;
-            key-positions = <53 2 36>;
+            key-positions = <53 14 54>;
             timeout-ms = <500>;
             layers = <1>;
         };
 
         BT_SEL_2 {
             bindings = <&bt BT_SEL 2>;
-            key-positions = <53 3 36>;
+            key-positions = <53 15 54>;
             timeout-ms = <500>;
             layers = <1>;
         };
 
         BT_SEL_3 {
             bindings = <&bt BT_SEL 3>;
-            key-positions = <53 4 36>;
+            key-positions = <53 16 54>;
             timeout-ms = <500>;
             layers = <1>;
         };
 
         BT_SEL_4 {
             bindings = <&bt BT_SEL 4>;
-            key-positions = <53 5 36>;
+            key-positions = <53 17 54>;
             timeout-ms = <500>;
             layers = <1>;
         };
 
         MUTE {
             bindings = <&kp C_MUTE>;
-            key-positions = <44 45>;
+            key-positions = <45 46>;
             timeout-ms = <500>;
             layers = <1>;
         };
 
-        ESC_1 {
+        COMBO_ESC {
             bindings = <&kp ESCAPE>;
-            key-positions = <0 24 36>;
-            timeout-ms = <500>;
-            layers = <0>;
-        };
-
-        ESC_2 {
-            bindings = <&kp ESCAPE>;
-            key-positions = <0 35 49>;
+            key-positions = <31 32>;
             timeout-ms = <500>;
             layers = <0>;
         };
@@ -166,11 +131,11 @@
 
         functinal {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4        &kp F5        &kp F6                             &kp F7         &kp F8        &kp F9        &kp F10           &kp F11    &kp F12
-&trans  &trans  &trans  &trans        &trans        &trans                             &kp C_AC_BACK  &kp PG_DN     &kp PG_UP     &kp C_AC_FORWARD  &kp PSCRN  &trans
-&trans  &trans  &trans  &trans        &trans        &trans                             &kp LEFT       &kp DOWN      &kp UP        &kp RIGHT         &kp HOME   &trans
-&trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans       &trans  &mkp LCLK      &kp C_VOL_DN  &kp C_VOL_UP  &mkp RCLK         &kp END    &trans
-                        &trans        &bt BT_SEL 3  &bt BT_SEL 4  &kp SPACE    &trans  &kp C_PP       &mkp MCLK     &trans
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                       &kp F7         &kp F8        &kp F9        &kp F10           &kp F11    &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans                       &kp C_AC_BACK  &kp PG_DN     &kp PG_UP     &kp C_AC_FORWARD  &kp PSCRN  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                       &kp LEFT       &kp DOWN      &kp UP        &kp RIGHT         &kp HOME   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans  &mkp LCLK      &kp C_VOL_DN  &kp C_VOL_UP  &mkp RCLK         &kp END    &trans
+                        &trans  &trans  &trans  &kp SPACE    &trans  &kp C_PP       &mkp MCLK     &trans
             >;
 
             label = "CAD";
