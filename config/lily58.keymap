@@ -70,7 +70,7 @@
 
         minus {
             bindings = <&kp MINUS>;
-            key-positions = <45 46>;
+            key-positions = <19 20>;
             timeout-ms = <25>;
         };
     };
@@ -108,11 +108,11 @@
 
             display-name = "Base";
             bindings = <
-&trans  &trans              &trans     &trans  &trans            &trans                                    &trans     &trans             &trans     &trans   &trans                       &trans
-&trans  &kp Q               &kp W      &kp E   &kp R             &kp T                                     &kp Y      &kp U              &kp I      &kp O    &kp P                        &trans
-&trans  &mt LEFT_CONTROL A  &mt TAB S  &kp D   &mt LEFT_SHIFT F  &kp G                                     &kp H      &mt RIGHT_SHIFT J  &kp K      &kp L    &mt RIGHT_CONTROL SEMICOLON  &trans
-&trans  &kp Z               &kp X      &kp C   &kp V             &kp B         &trans         &trans       &kp N      &kp M              &kp COMMA  &kp DOT  &kp SLASH                    &trans
-                                       &trans  &kp LGUI          &kp LEFT_ALT  &lt 1 SPACE    &lt 2 ENTER  &bspc_del  &kp RIGHT_GUI      &trans
+&trans  &trans              &trans          &trans     &trans            &trans                                    &trans     &trans             &trans     &trans           &trans                       &trans
+&trans  &kp Q               &kp W           &kp E      &kp R             &kp T                                     &kp Y      &kp U              &kp I      &kp O            &kp P                        &trans
+&trans  &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt TAB D  &mt LEFT_SHIFT F  &kp G                                     &kp H      &mt RIGHT_SHIFT J  &kp K      &mt RIGHT_ALT L  &mt RIGHT_CONTROL SEMICOLON  &trans
+&trans  &kp Z               &kp X           &kp C      &kp V             &kp B         &trans         &trans       &kp N      &kp M              &kp COMMA  &kp DOT          &kp SLASH                    &trans
+                                            &trans     &kp LGUI          &kp LEFT_ALT  &lt 1 SPACE    &lt 2 ENTER  &bspc_del  &kp RIGHT_GUI      &trans
             >;
         };
 
@@ -126,11 +126,11 @@
 
             display-name = "Numeric";
             bindings = <
-&kp F1  &kp F2                  &kp F3         &kp F4  &kp F5          &kp F6                                 &kp F7             &kp F8                 &kp F9     &kp F10    &kp F11                          &kp F12
-&trans  &kp N1                  &kp N2         &kp N3  &kp N4          &kp N5                                 &kp N6             &kp N7                 &kp N8     &kp N9     &kp N0                           &trans
-&trans  &mt LEFT_CONTROL GRAVE  &kp BACKSLASH  &trans  &kp LEFT_SHIFT  &kp LEFT_BRACKET                       &kp RIGHT_BRACKET  &mt RIGHT_SHIFT MINUS  &kp EQUAL  &kp SLASH  &mt RIGHT_CONTROL DOUBLE_QUOTES  &trans
-&trans  &trans                  &trans         &trans  &trans          &trans            &trans    &trans     &trans             &trans                 &trans     &trans     &trans                           &trans
-                                               &trans  &kp LGUI        &kp LEFT_ALT      &trans    &kp ENTER  &bspc_del          &kp RIGHT_GUI          &trans
+&kp F1  &kp F2            &kp F3         &kp F4        &kp F5          &kp F6                                 &kp F7             &kp F8           &kp F9         &kp F10    &kp F11            &kp F12
+&trans  &kp N1            &kp N2         &kp N3        &kp N4          &kp N5                                 &kp N6             &kp N7           &kp N8         &kp N9     &kp N0             &trans
+&trans  &kp LEFT_CONTROL  &kp TAB        &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_BRACKET                       &kp RIGHT_BRACKET  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &trans     &kp RIGHT_CONTROL  &trans
+&trans  &kp GRAVE         &kp BACKSLASH  &trans        &trans          &trans            &trans    &trans     &trans             &kp MINUS        &kp EQUAL      &kp SLASH  &kp DOUBLE_QUOTES  &trans
+                                         &trans        &kp LGUI        &kp LEFT_ALT      &trans    &kp ENTER  &bspc_del          &kp RIGHT_GUI    &trans
             >;
         };
 
