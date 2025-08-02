@@ -154,7 +154,7 @@
         function {
             bindings = <
 &trans  &trans   &trans   &trans  &trans  &trans                     &trans                       &trans                       &trans                   &trans                         &trans                  &trans
-&trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                     &kp C_AC_BACK                &kp PG_DN                    &kp PG_UP                &kp C_AC_FORWARD               &kp PSCRN               &trans
+&trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                     &kp C_AC_BACK                &msc SCRL_DOWN               &msc SCRL_UP             &kp C_AC_FORWARD               &kp PSCRN               &trans
 &trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10                    &mmv_t MOVE_LEFT LEFT_ARROW  &mmv_t MOVE_DOWN DOWN_ARROW  &mmv_t MOVE_UP UP_ARROW  &mmv_t MOVE_RIGHT RIGHT_ARROW  &mt RIGHT_CONTROL HOME  &trans
 &trans  &kp F11  &kp F12  &trans  &trans  &trans   &trans    &trans  &mkp LCLK                    &kp C_VOL_DN                 &kp C_VOL_UP             &mkp RCLK                      &mt RIGHT_SHIFT END     &trans
                           &trans  &trans  &trans   &trans    &trans  &kp C_PP                     &mkp MCLK                    &trans
