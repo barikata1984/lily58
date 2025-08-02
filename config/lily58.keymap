@@ -59,6 +59,7 @@
             bindings = <&kp C_MUTE>;
             key-positions = <46 47>;
             timeout-ms = <25>;
+            layers = <2>;
         };
 
         COMBO_ESC {
@@ -75,7 +76,7 @@
 
         lshft {
             bindings = <&kp LEFT_SHIFT>;
-            key-positions = <38 39>;
+            key-positions = <38 37>;
             timeout-ms = <25>;
         };
 
@@ -87,7 +88,7 @@
 
         rshft {
             bindings = <&kp RIGHT_SHIFT>;
-            key-positions = <47 46>;
+            key-positions = <47 48>;
             timeout-ms = <25>;
         };
 
@@ -127,7 +128,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        base_layer {
+        Base {
             // ------------------------------------------------------------------------------------------------------------
             // |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   `   |
             // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
@@ -145,7 +146,7 @@
             >;
         };
 
-        numeric {
+        Numeric {
             // ------------------------------------------------------------------------------------------------------------
             // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
             // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |       |
@@ -153,7 +154,7 @@
             // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
             //                     |      |      |      |        |  |       |      |       |       |
 
-            display-name = "Utility";
+            display-name = "Numeric";
             bindings = <
 &kp F1  &kp F2     &kp F3         &kp F4  &kp F5    &kp F6                                    &kp F7             &kp F8     &kp F9     &kp F10    &kp F11            &kp F12
 &trans  &kp N1     &kp N2         &kp N3  &kp N4    &kp N5                                    &kp N6             &kp N7     &kp N8     &kp N9     &kp N0             &trans
@@ -163,7 +164,7 @@
             >;
         };
 
-        functional {
+        Function {
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                       &kp F7         &kp F8        &kp F9        &kp F10           &kp F11    &kp F12
 &trans  &trans  &trans  &trans  &trans  &trans                       &kp C_AC_BACK  &kp PG_DN     &kp PG_UP     &kp C_AC_FORWARD  &kp PSCRN  &trans
@@ -172,7 +173,7 @@
                         &trans  &trans  &trans  &kp SPACE    &trans  &kp C_PP       &mkp MCLK     &trans
             >;
 
-            label = "CAD";
+            label = "Function";
         };
     };
 };
