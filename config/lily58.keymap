@@ -65,18 +65,6 @@
             timeout-ms = <25>;
             layers = <2>;
         };
-
-        COMBO_ESC {
-            bindings = <&kp ESCAPE>;
-            key-positions = <31 32>;
-            timeout-ms = <25>;
-        };
-
-        minus {
-            bindings = <&kp MINUS>;
-            key-positions = <19 20>;
-            timeout-ms = <25>;
-        };
     };
 
     behaviors {
