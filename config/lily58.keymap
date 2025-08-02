@@ -145,24 +145,14 @@
 
         Function {
             bindings = <
-&trans  &trans   &trans   &trans             &trans            &trans                          &trans         &trans        &trans        &trans            &trans     &trans
-&trans  &kp F1   &kp F2   &kp F3             &kp F4            &kp F5                          &kp C_AC_BACK  &kp PG_DN     &kp PG_UP     &kp C_AC_FORWARD  &kp PSCRN  &trans
-&trans  &kp F6   &kp F7   &kp F8             &kp F9            &kp F10                         &kp LEFT       &kp DOWN      &kp UP        &kp RIGHT         &kp HOME   &trans
-&trans  &kp F11  &kp F12  &kp C_AC_ZOOM_OUT  &kp C_AC_ZOOM_IN  &trans        &trans    &trans  &mkp LCLK      &kp C_VOL_DN  &kp C_VOL_UP  &mkp RCLK         &kp END    &trans
-                          &trans             &kp LEFT_GUI      &kp LEFT_ALT  &mo 3     &trans  &kp C_PP       &mkp MCLK     &trans
+&trans  &trans   &trans   &trans             &trans            &trans                             &trans                 &trans                 &trans             &trans                   &trans     &trans
+&trans  &kp F1   &kp F2   &kp F3             &kp F4            &kp F5                             &kp C_AC_BACK          &kp PG_DN              &kp PG_UP          &kp C_AC_FORWARD         &kp PSCRN  &trans
+&trans  &kp F6   &kp F7   &kp F8             &kp F9            &kp F10                            &mmv_t MOVE_LEFT LEFT  &mmv_t MOVE_DOWN DOWN  &mmv_t MOVE_UP UP  &mmv_t MOVE_RIGHT RIGHT  &kp HOME   &trans
+&trans  &kp F11  &kp F12  &kp C_AC_ZOOM_OUT  &kp C_AC_ZOOM_IN  &trans        &trans       &trans  &mkp LCLK              &kp C_VOL_DN           &kp C_VOL_UP       &mkp RCLK                &kp END    &trans
+                          &trans             &kp LEFT_GUI      &kp LEFT_ALT  &kp SPACE    &trans  &kp C_PP               &mkp MCLK              &trans
             >;
 
             label = "function";
-        };
-
-        Cursor {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans                 &trans                 &trans                   &trans                   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans                 &trans                 &trans                   &trans                   &trans  &trans
-&trans  &trans  &trans  &trans  &kp T   &trans                    &mmv_t MOVE_LEFT DOWN  &mmv_t MOVE_DOWN DOWN  &mmv_t MOVE_UP UP_ARROW  &mmv_t MOVE_RIGHT RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                 &trans                 &trans                   &trans                   &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans                 &trans                 &trans
-            >;
         };
     };
 };
