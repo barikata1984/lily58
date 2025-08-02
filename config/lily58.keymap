@@ -125,11 +125,11 @@
 
             display-name = "default";
             bindings = <
-&trans  &trans              &trans  &trans  &trans    &trans                                  &trans          &trans      &trans     &trans   &trans                       &trans
-&trans  &kp Q               &kp W   &kp E   &kp R     &kp T                                   &kp Y           &kp U       &kp I      &kp O    &kp P                        &trans
-&trans  &mt LEFT_CONTROL A  &kp S   &kp D   &kp F     &kp G                                   &kp H           &kp J       &kp K      &kp L    &mt RIGHT_CONTROL SEMICOLON  &trans
-&trans  &mt LEFT_SHIFT Z    &kp X   &kp C   &kp V     &kp B         &trans       &trans       &kp N           &kp M       &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH        &trans
-                                    &trans  &kp LGUI  &kp LEFT_ALT  &kp SPACE    &lt 2 ENTER  &l_bspcdel 1 0  &kp ESCAPE  &trans
+&trans  &trans              &trans  &trans  &trans    &trans                                  &trans        &trans    &trans     &trans   &trans                       &trans
+&trans  &kp Q               &kp W   &kp E   &kp R     &kp T                                   &kp Y         &kp U     &kp I      &kp O    &kp P                        &trans
+&trans  &mt LEFT_CONTROL A  &kp S   &kp D   &kp F     &kp G                                   &kp H         &kp J     &kp K      &kp L    &mt RIGHT_CONTROL SEMICOLON  &trans
+&trans  &mt LEFT_SHIFT Z    &kp X   &kp C   &kp V     &kp B         &trans       &trans       &kp N         &kp M     &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH        &trans
+                                    &trans  &kp LGUI  &kp LEFT_ALT  &kp SPACE    &lt 2 ENTER  &lt 1 ESCAPE  &bspcdel  &trans
             >;
         };
 
@@ -143,11 +143,11 @@
 
             display-name = "numeric";
             bindings = <
-&trans  &trans            &trans        &trans   &trans    &trans                                 &trans             &trans      &trans     &trans             &trans             &trans
-&trans  &kp N1            &kp N2        &kp N3   &kp N4    &kp N5                                 &kp N6             &kp N7      &kp N8     &kp N9             &kp N0             &trans
-&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB  &trans    &kp LEFT_BRACKET                       &kp RIGHT_BRACKET  &trans      &kp TAB    &kp RIGHT_ALT      &kp RIGHT_CONTROL  &trans
-&trans  &kp LEFT_SHIFT    &kp GRAVE     &trans   &trans    &kp BACKSLASH     &trans    &trans     &kp BACKSLASH      &kp MINUS   &kp EQUAL  &kp DOUBLE_QUOTES  &kp RIGHT_SHIFT    &trans
-                                        &trans   &kp LGUI  &kp LEFT_ALT      &trans    &kp ENTER  &bspcdel           &kp ESCAPE  &trans
+&trans  &trans            &trans        &trans   &trans    &trans                                 &trans             &trans     &trans     &trans            &trans             &trans
+&trans  &kp N1            &kp N2        &kp N3   &kp N4    &kp N5                                 &kp N6             &kp N7     &kp N8     &kp N9            &kp N0             &trans
+&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB  &trans    &kp LEFT_BRACKET                       &kp RIGHT_BRACKET  &trans     &kp TAB    &kp RIGHT_ALT     &kp RIGHT_CONTROL  &trans
+&trans  &kp LEFT_SHIFT    &kp GRAVE     &trans   &trans    &kp BACKSLASH     &trans    &trans     &kp SLASH          &kp MINUS  &kp EQUAL  &kp SINGLE_QUOTE  &kp RIGHT_SHIFT    &trans
+                                        &trans   &kp LGUI  &kp LEFT_ALT      &trans    &kp ENTER  &bspcdel           &bspcdel   &trans
             >;
         };
 
