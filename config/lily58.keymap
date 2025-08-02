@@ -93,10 +93,10 @@
             tapping-term-ms = <123>;
         };
 
-        l_bspcdel: l_bspcdel {
+        l_gresc: l_gresc {
             compatible = "zmk,behavior-hold-tap";
-            label = "L_BSPCDEL";
-            bindings = <&mo>, <&bspcdel>;
+            label = "L_GRESC";
+            bindings = <&mo>, <&gresc>;
 
             #binding-cells = <2>;
             tapping-term-ms = <400>;
@@ -129,7 +129,7 @@
 &trans  &kp Q               &kp W   &kp E   &kp R     &kp T                                   &kp Y         &kp U     &kp I      &kp O    &kp P                        &trans
 &trans  &mt LEFT_CONTROL A  &kp S   &kp D   &kp F     &kp G                                   &kp H         &kp J     &kp K      &kp L    &mt RIGHT_CONTROL SEMICOLON  &trans
 &trans  &mt LEFT_SHIFT Z    &kp X   &kp C   &kp V     &kp B         &trans       &trans       &kp N         &kp M     &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH        &trans
-                                    &trans  &kp LGUI  &kp LEFT_ALT  &kp SPACE    &lt 2 ENTER  &lt 1 ESCAPE  &bspcdel  &trans
+                                    &trans  &kp LGUI  &kp LEFT_ALT  &kp SPACE    &lt 2 ENTER  &l_gresc 1 0  &bspcdel  &trans
             >;
         };
 
@@ -146,18 +146,18 @@
 &trans  &trans            &trans         &trans  &trans    &trans                                    &trans             &trans     &trans     &trans            &trans             &trans
 &trans  &kp N1            &kp N2         &kp N3  &kp N4    &kp N5                                    &kp N6             &kp N7     &kp N8     &kp N9            &kp N0             &trans
 &trans  &kp LEFT_CONTROL  &kp BACKSLASH  &trans  &kp TAB   &kp LEFT_BRACKET                          &kp RIGHT_BRACKET  &kp MINUS  &kp EQUAL  &kp SLASH         &kp RIGHT_CONTROL  &trans
-&trans  &kp LEFT_SHIFT    &kp GRAVE      &trans  &trans    &trans            &trans       &trans     &trans             &trans     &trans     &kp SINGLE_QUOTE  &kp RIGHT_SHIFT    &trans
+&trans  &kp LEFT_SHIFT    &trans         &trans  &trans    &trans            &trans       &trans     &trans             &trans     &trans     &kp SINGLE_QUOTE  &kp RIGHT_SHIFT    &trans
                                          &trans  &kp LGUI  &kp LEFT_ALT      &kp SPACE    &kp ENTER  &trans             &bspcdel   &trans
             >;
         };
 
         Function {
             bindings = <
-&trans  &trans   &trans   &trans             &trans            &trans                             &trans                 &trans                 &trans             &trans                   &trans                  &trans
-&trans  &kp F1   &kp F2   &kp F3             &kp F4            &kp F5                             &kp C_AC_BACK          &kp PG_DN              &kp PG_UP          &kp C_AC_FORWARD         &kp PSCRN               &trans
-&trans  &kp F6   &kp F7   &kp F8             &kp F9            &kp F10                            &mmv_t MOVE_LEFT LEFT  &mmv_t MOVE_DOWN DOWN  &mmv_t MOVE_UP UP  &mmv_t MOVE_RIGHT RIGHT  &mt HOME RIGHT_CONTROL  &trans
-&trans  &kp F11  &kp F12  &kp C_AC_ZOOM_OUT  &kp C_AC_ZOOM_IN  &trans        &trans       &trans  &mkp LCLK              &kp C_VOL_DN           &kp C_VOL_UP       &mkp RCLK                &mt END RIGHT_SHIFT     &trans
-                          &trans             &kp LEFT_GUI      &kp LEFT_ALT  &kp SPACE    &trans  &kp C_PP               &mkp MCLK              &trans
+&trans  &trans   &trans   &trans  &trans        &trans                             &trans                 &trans                 &trans             &trans                   &trans                  &trans
+&trans  &kp F1   &kp F2   &kp F3  &kp F4        &kp F5                             &kp C_AC_BACK          &kp PG_DN              &kp PG_UP          &kp C_AC_FORWARD         &kp PSCRN               &trans
+&trans  &kp F6   &kp F7   &kp F8  &kp F9        &kp F10                            &mmv_t MOVE_LEFT LEFT  &mmv_t MOVE_DOWN DOWN  &mmv_t MOVE_UP UP  &mmv_t MOVE_RIGHT RIGHT  &mt HOME RIGHT_CONTROL  &trans
+&trans  &kp F11  &kp F12  &trans  &trans        &trans        &trans       &trans  &mkp LCLK              &kp C_VOL_DN           &kp C_VOL_UP       &mkp RCLK                &mt END RIGHT_SHIFT     &trans
+                          &trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE    &trans  &kp C_PP               &mkp MCLK              &trans
             >;
 
             label = "function";
