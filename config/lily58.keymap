@@ -68,39 +68,9 @@
             timeout-ms = <25>;
         };
 
-        lctrl {
-            bindings = <&kp LEFT_CONTROL>;
-            key-positions = <26 27>;
-            timeout-ms = <25>;
-        };
-
-        lshft {
-            bindings = <&kp LEFT_SHIFT>;
-            key-positions = <38 37>;
-            timeout-ms = <25>;
-        };
-
-        rctrl {
-            bindings = <&kp RIGHT_CONTROL>;
-            key-positions = <33 32>;
-            timeout-ms = <25>;
-        };
-
-        rshft {
-            bindings = <&kp RIGHT_SHIFT>;
-            key-positions = <47 48>;
-            timeout-ms = <25>;
-        };
-
-        bspc-del {
-            bindings = <&bspc_del>;
-            key-positions = <20 21>;
-            timeout-ms = <25>;
-        };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <14 15>;
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <45 46>;
             timeout-ms = <25>;
         };
     };
@@ -138,11 +108,11 @@
 
             display-name = "Base";
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans                                  &trans  &trans           &trans     &trans   &trans     &trans
-&trans  &kp Q   &kp W   &kp E   &kp R     &kp T                                   &kp Y   &kp U            &kp I      &kp O    &kp P      &trans
-&trans  &kp A   &kp S   &kp D   &kp F     &kp G                                   &kp H   &kp J            &kp K      &kp L    &kp SEMI   &mt RIGHT_CONTROL C
-&trans  &kp Z   &kp X   &kp C   &kp V     &kp B         &trans       &trans       &kp N   &kp M            &kp COMMA  &kp DOT  &kp SLASH  &mt RIGHT_SHIFT S
-                        &trans  &kp LGUI  &kp LEFT_ALT  &kp SPACE    &lt 2 ENTER  &mo 1   &lt 1 BACKSPACE  &trans
+&trans  &trans              &trans     &trans  &trans            &trans                                    &trans     &trans             &trans     &trans   &trans                       &trans
+&trans  &kp Q               &kp W      &kp E   &kp R             &kp T                                     &kp Y      &kp U              &kp I      &kp O    &kp P                        &trans
+&trans  &mt LEFT_CONTROL A  &mt TAB S  &kp D   &mt LEFT_SHIFT F  &kp G                                     &kp H      &mt RIGHT_SHIFT J  &kp K      &kp L    &mt RIGHT_CONTROL SEMICOLON  &trans
+&trans  &kp Z               &kp X      &kp C   &kp V             &kp B         &trans         &trans       &kp N      &kp M              &kp COMMA  &kp DOT  &kp SLASH                    &trans
+                                       &trans  &kp LGUI          &kp LEFT_ALT  &lt 1 SPACE    &lt 2 ENTER  &bspc_del  &kp RIGHT_GUI      &trans
             >;
         };
 
@@ -156,21 +126,21 @@
 
             display-name = "Numeric";
             bindings = <
-&kp F1  &kp F2     &kp F3         &kp F4  &kp F5    &kp F6                                    &kp F7             &kp F8     &kp F9     &kp F10    &kp F11            &kp F12
-&trans  &kp N1     &kp N2         &kp N3  &kp N4    &kp N5                                    &kp N6             &kp N7     &kp N8     &kp N9     &kp N0             &trans
-&trans  &kp GRAVE  &kp BACKSLASH  &trans  &trans    &kp LEFT_BRACKET                          &kp RIGHT_BRACKET  &kp MINUS  &kp EQUAL  &kp SLASH  &kp DOUBLE_QUOTES  &trans
-&trans  &trans     &trans         &trans  &trans    &trans            &trans       &trans     &trans             &trans     &trans     &trans     &trans             &trans
-                                  &trans  &kp LGUI  &kp LEFT_ALT      &kp SPACE    &kp ENTER  &trans             &trans     &trans
+&kp F1  &kp F2                  &kp F3         &kp F4  &kp F5          &kp F6                                 &kp F7             &kp F8                 &kp F9     &kp F10    &kp F11                          &kp F12
+&trans  &kp N1                  &kp N2         &kp N3  &kp N4          &kp N5                                 &kp N6             &kp N7                 &kp N8     &kp N9     &kp N0                           &trans
+&trans  &mt LEFT_CONTROL GRAVE  &kp BACKSLASH  &trans  &kp LEFT_SHIFT  &kp LEFT_BRACKET                       &kp RIGHT_BRACKET  &mt RIGHT_SHIFT MINUS  &kp EQUAL  &kp SLASH  &mt RIGHT_CONTROL DOUBLE_QUOTES  &trans
+&trans  &trans                  &trans         &trans  &trans          &trans            &trans    &trans     &trans             &trans                 &trans     &trans     &trans                           &trans
+                                               &trans  &kp LGUI        &kp LEFT_ALT      &trans    &kp ENTER  &bspc_del          &kp RIGHT_GUI          &trans
             >;
         };
 
         Function {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                       &kp F7         &kp F8        &kp F9        &kp F10           &kp F11    &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans                       &kp C_AC_BACK  &kp PG_DN     &kp PG_UP     &kp C_AC_FORWARD  &kp PSCRN  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                       &kp LEFT       &kp DOWN      &kp UP        &kp RIGHT         &kp HOME   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans  &mkp LCLK      &kp C_VOL_DN  &kp C_VOL_UP  &mkp RCLK         &kp END    &trans
-                        &trans  &trans  &trans  &kp SPACE    &trans  &kp C_PP       &mkp MCLK     &trans
+&trans  &trans   &trans   &trans  &trans        &trans                             &trans         &trans        &trans        &trans            &trans     &trans
+&trans  &kp F1   &kp F2   &kp F3  &kp F4        &kp F5                             &kp C_AC_BACK  &kp PG_DN     &kp PG_UP     &kp C_AC_FORWARD  &kp PSCRN  &trans
+&trans  &kp F6   &kp F7   &kp F8  &kp F9        &kp F10                            &kp LEFT       &kp DOWN      &kp UP        &kp RIGHT         &kp HOME   &trans
+&trans  &kp F11  &kp F12  &trans  &trans        &trans        &trans       &trans  &mkp LCLK      &kp C_VOL_DN  &kp C_VOL_UP  &mkp RCLK         &kp END    &trans
+                          &trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE    &trans  &kp C_PP       &mkp MCLK     &trans
             >;
 
             label = "Function";
