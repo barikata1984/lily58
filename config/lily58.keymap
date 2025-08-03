@@ -83,31 +83,13 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        mmv_t: mmv_t {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MMV_T";
-            bindings = <&mmv>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <123>;
-        };
-
-        m_gresc: m_gresc {
-            compatible = "zmk,behavior-hold-tap";
-            label = "M_GRESC";
-            bindings = <&kp>, <&gresc>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <400>;
-        };
-
         sprleft: sprleft {
             compatible = "zmk,behavior-mod-morph";
             label = "SPRLEFT";
             bindings = <&kp LEFT>, <&mmv MOVE_LEFT>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_RCTL|MOD_LCTL|MOD_LALT)>;
         };
 
         sprdown: sprdown {
@@ -116,7 +98,7 @@
             bindings = <&kp DOWN>, <&mmv MOVE_DOWN>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_LCTL|MOD_LALT|MOD_RCTL)>;
         };
 
         sprup: sprup {
@@ -125,7 +107,7 @@
             bindings = <&kp UP>, <&mmv MOVE_UP>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_LCTL|MOD_LALT|MOD_RCTL)>;
         };
 
         sprright: sprright {
@@ -134,7 +116,7 @@
             bindings = <&kp RIGHT>, <&mmv MOVE_RIGHT>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_LCTL|MOD_LALT|MOD_RCTL)>;
         };
     };
 
