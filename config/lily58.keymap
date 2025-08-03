@@ -100,6 +100,42 @@
             #binding-cells = <2>;
             tapping-term-ms = <400>;
         };
+
+        sprleft: sprleft {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SPRLEFT";
+            bindings = <&kp LEFT>, <&mmv MOVE_LEFT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        sprdown: sprdown {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SPRDOWN";
+            bindings = <&kp DOWN>, <&mmv MOVE_DOWN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        sprup: sprup {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SPRUP";
+            bindings = <&kp UP>, <&mmv MOVE_UP>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        sprright: sprright {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SPRRIGHT";
+            bindings = <&kp RIGHT>, <&mmv MOVE_RIGHT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -152,11 +188,11 @@
 
         function {
             bindings = <
-&trans  &trans   &trans   &trans  &trans  &trans                     &trans                       &trans                       &trans                   &trans                         &trans                  &trans
-&trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                     &kp C_AC_BACK                &msc SCRL_DOWN               &msc SCRL_UP             &kp C_AC_FORWARD               &kp PSCRN               &trans
-&trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10                    &mmv_t MOVE_LEFT LEFT_ARROW  &mmv_t MOVE_DOWN DOWN_ARROW  &mmv_t MOVE_UP UP_ARROW  &mmv_t MOVE_RIGHT RIGHT_ARROW  &mt RIGHT_CONTROL HOME  &trans
-&trans  &kp F11  &kp F12  &trans  &trans  &trans   &trans    &trans  &mkp LCLK                    &kp C_VOL_DN                 &kp C_VOL_UP             &mkp RCLK                      &mt RIGHT_SHIFT END     &trans
-                          &trans  &trans  &trans   &trans    &trans  &kp C_PP                     &mkp MCLK                    &trans
+&trans  &trans   &trans   &trans  &trans  &trans                     &trans         &trans          &trans        &trans            &trans                  &gresc
+&trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                     &kp C_AC_BACK  &msc SCRL_DOWN  &msc SCRL_UP  &kp C_AC_FORWARD  &kp PSCRN               &trans
+&trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10                    &sprleft       &sprdown        &sprup        &sprright         &mt RIGHT_CONTROL HOME  &trans
+&trans  &kp F11  &kp F12  &trans  &trans  &trans   &trans    &trans  &mkp LCLK      &kp C_VOL_DN    &kp C_VOL_UP  &mkp RCLK         &mt RIGHT_SHIFT END     &trans
+                          &trans  &trans  &trans   &trans    &trans  &kp C_PP       &mkp MCLK       &trans
             >;
 
             label = "Function";
