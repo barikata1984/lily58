@@ -123,7 +123,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "ENTERING_LAYERS";
             #binding-cells = <0>;
-            bindings = <&lt 1 ENTER>, <&mo 2>;
+            bindings = <&lt 2 ENTER>, <&mo 1>;
         };
     };
 
