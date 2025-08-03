@@ -21,7 +21,10 @@
     acceleration-exponent = <1>;
 };
 
-&lt { flavor = "balanced"; };
+&lt {
+    flavor = "balanced";
+    tapping-term-ms = <100>;
+};
 
 / {
     combos {
