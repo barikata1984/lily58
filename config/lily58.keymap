@@ -23,7 +23,7 @@
 
 &lt {
     flavor = "hold-preferred";
-    tapping-term-ms = <150>;
+    tapping-term-ms = <125>;
 };
 
 / {
@@ -129,6 +129,8 @@
             label = "ENTERING_LAYERS";
             #binding-cells = <0>;
             bindings = <&lt 1 ENTER>, <&mo 2>;
+
+            tapping-term-ms = <150>;
         };
     };
 
