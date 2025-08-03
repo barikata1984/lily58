@@ -14,14 +14,10 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-&mt { flavor = "balanced"; };
-
 &mmv {
     time-to-max-speed-ms = <450>;
     acceleration-exponent = <1>;
 };
-
-&lt { tapping-term-ms = <25>; };
 
 / {
     combos {
@@ -119,13 +115,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_LALT|MOD_RCTL)>;
-        };
-
-        entering_layers: entering_layers {
-            compatible = "zmk,behavior-tap-dance";
-            label = "ENTERING_LAYERS";
-            #binding-cells = <0>;
-            bindings = <&lt 1 ENTER>, <&mo 2>;
         };
     };
 
