@@ -28,42 +28,42 @@
         COMBO_BT_CLR {
             bindings = <&bt BT_CLR>;
             key-positions = <53 28 31 54>;
-            layers = <2>;
+            layers = <1>;
         };
 
         BT_SEL_0 {
             bindings = <&bt BT_SEL 0>;
             key-positions = <53 54 13>;
             timeout-ms = <500>;
-            layers = <2>;
+            layers = <1>;
         };
 
         BT_SEL_1 {
             bindings = <&bt BT_SEL 1>;
             key-positions = <53 14 54>;
             timeout-ms = <500>;
-            layers = <2>;
+            layers = <1>;
         };
 
         BT_SEL_2 {
             bindings = <&bt BT_SEL 2>;
             key-positions = <53 15 54>;
             timeout-ms = <500>;
-            layers = <2>;
+            layers = <1>;
         };
 
         BT_SEL_3 {
             bindings = <&bt BT_SEL 3>;
             key-positions = <53 16 54>;
             timeout-ms = <500>;
-            layers = <2>;
+            layers = <1>;
         };
 
         BT_SEL_4 {
             bindings = <&bt BT_SEL 4>;
             key-positions = <53 17 54>;
             timeout-ms = <500>;
-            layers = <2>;
+            layers = <1>;
         };
 
         MUTE {
@@ -123,7 +123,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "ENTERING_LAYERS";
             #binding-cells = <0>;
-            bindings = <&lt 2 ENTER>, <&mo 1>;
+            bindings = <&lt 1 ENTER>, <&mo 2>;
         };
     };
 
@@ -157,6 +157,18 @@
             >;
         };
 
+        function {
+            bindings = <
+&trans  &trans   &trans   &trans  &trans  &trans                     &trans         &trans          &trans        &trans            &trans                  &gresc
+&trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                     &kp C_AC_BACK  &msc SCRL_DOWN  &msc SCRL_UP  &kp C_AC_FORWARD  &kp PSCRN               &trans
+&trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10                    &sprleft       &sprdown        &sprup        &sprright         &mt RIGHT_CONTROL HOME  &trans
+&trans  &kp F11  &kp F12  &trans  &trans  &trans   &trans    &trans  &mkp LCLK      &kp C_VOL_DN    &kp C_VOL_UP  &mkp RCLK         &mt RIGHT_SHIFT END     &trans
+                          &trans  &trans  &trans   &trans    &trans  &kp C_PP       &mkp MCLK       &trans
+            >;
+
+            label = "Function";
+        };
+
         numeric {
             // ------------------------------------------------------------------------------------------------------------
             // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
@@ -173,18 +185,6 @@
 &trans  &kp LEFT_SHIFT    &none          &none   &none    &none             &trans    &trans  &none              &kp SINGLE_QUOTE  &trans     &trans  &trans  &trans
                                          &trans  &trans   &trans            &trans    &trans  &trans             &trans            &trans
             >;
-        };
-
-        function {
-            bindings = <
-&trans  &trans   &trans   &trans  &trans  &trans                     &trans         &trans          &trans        &trans            &trans                  &gresc
-&trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                     &kp C_AC_BACK  &msc SCRL_DOWN  &msc SCRL_UP  &kp C_AC_FORWARD  &kp PSCRN               &trans
-&trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10                    &sprleft       &sprdown        &sprup        &sprright         &mt RIGHT_CONTROL HOME  &trans
-&trans  &kp F11  &kp F12  &trans  &trans  &trans   &trans    &trans  &mkp LCLK      &kp C_VOL_DN    &kp C_VOL_UP  &mkp RCLK         &mt RIGHT_SHIFT END     &trans
-                          &trans  &trans  &trans   &trans    &trans  &kp C_PP       &mkp MCLK       &trans
-            >;
-
-            label = "Function";
         };
     };
 };
