@@ -17,7 +17,7 @@
 &mt { tapping-term-ms = <400>; };
 
 &mmv {
-    time-to-max-speed-ms = <600>;
+    time-to-max-speed-ms = <450>;
     acceleration-exponent = <1>;
 };
 
