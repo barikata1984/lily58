@@ -19,7 +19,10 @@
     acceleration-exponent = <1>;
 };
 
-&mt { flavor = "balanced"; };
+&mt {
+    flavor = "tap-preferred";
+    tapping-term-ms = <100>;
+};
 
 / {
     combos {
