@@ -77,7 +77,7 @@
         };
 
         COMBO_HOME {
-            bindings = <&pg_vnav 0 0>;
+            bindings = <&endhome>;
             key-positions = <19 20>;
             layers = <2>;
         };
@@ -136,26 +136,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        scrl_updown: scrl_updown {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SCRL_UPDOWN";
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        pg_vnav: pg_vnav {
-            compatible = "zmk,behavior-hold-tap";
-            label = "PG_VNAV";
-            bindings = <&scrl_updown>, <&endhome>;
-
-            #binding-cells = <2>;
-            hold-trigger-key-positions = <19 20>;
-            tapping-term-ms = <200>;
-            flavor = "balanced";
         };
     };
 
