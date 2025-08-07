@@ -71,7 +71,7 @@
             layers = <2>;
         };
 
-        jk2gresc {
+        JK2GRESC {
             bindings = <&gresc>;
             key-positions = <31 32>;
         };
@@ -80,6 +80,11 @@
             bindings = <&endhome>;
             key-positions = <19 20>;
             layers = <2>;
+        };
+
+        COMBO_RALT {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <46 47>;
         };
     };
 
