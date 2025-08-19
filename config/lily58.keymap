@@ -41,6 +41,42 @@
             key-positions = <19 20>;
             layers = <2>;
         };
+
+        BT_SEL_0_ {
+            bindings = <&bt BT_SEL 0>;
+            key-positions = <13 48>;
+            layers = <2>;
+        };
+
+        BT_SEL_1_ {
+            bindings = <&bt BT_SEL 1>;
+            key-positions = <48 14>;
+            layers = <2>;
+        };
+
+        BT_SEL_2_ {
+            bindings = <&bt BT_SEL 2>;
+            key-positions = <48 15>;
+            layers = <2>;
+        };
+
+        BT_SEL_3_ {
+            bindings = <&bt BT_SEL 3>;
+            key-positions = <48 16>;
+            layers = <2>;
+        };
+
+        BT_SEL_4_ {
+            bindings = <&bt BT_SEL 4>;
+            key-positions = <48 17>;
+            layers = <2>;
+        };
+
+        BT_CLR_ {
+            bindings = <&bt BT_CLR>;
+            key-positions = <48 31 32>;
+            layers = <2>;
+        };
     };
 
     behaviors {
@@ -114,15 +150,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-    };
-
-    macros {
-        double_zero: double_zero {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp NUMBER_0 &kp NUMBER_0>;
-            label = "DOUBLE_ZERO";
         };
     };
 
